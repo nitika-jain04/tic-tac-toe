@@ -1,5 +1,5 @@
+import { WINNING_COMBINATIONS } from "../Winning-Combinations";
 import { useState } from "react";
-import { WINNING_COMBINATIONS } from "../winning-combinations.js";
 
 const initialGameBoard = [
   [null, null, null],
@@ -11,9 +11,8 @@ export default function GameBoard({ onSelectSquare, activePlayerSymbol }) {
   const [hasWinner, setWinner] = useState(false);
   const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
-  // for(const combination of WINNING_COMBINATIONS){
-  //   if(combination)
-  // }
+  for (const combination of WINNING_COMBINATIONS) {
+  }
 
   function handleMoves(rowIndex, colIndex) {
     setGameBoard((prevGameBoard) => {
